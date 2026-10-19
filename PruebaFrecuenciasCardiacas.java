@@ -15,9 +15,24 @@ public class PruebaFrecuenciasCardiacas {
         int dia = scanner.nextInt();
 
         System.out.print("Mes de nacimiento: ");
-        int mes = scanner.nextIn();
+        int mes = scanner.nextInt();
 
+        System.out.print("Año de nacimiento: ");
+        int anio = scanner.nextInt();
+
+        FrecuenciasCardiacas persona = new FrecuenciasCardiacas(
+            nombre, apellido, dia, mes, anio);
+
+        System.out.prinln("\nINFORMACION PERSONAS");
+        System.out.println("Nombre: " + persona.obtenerPrimerNombre() 
+                 + " " + perosna.obtenerApellido());
+        System.out.printf("Edad: " + persona.calcularEdad() + "años");
+        System.out.printf("Fecha de nacimiento: %02d/%02d/%04d%n",
+                persona.obtenerDiaNacimiento(),
+                persona.ontenerMesNacimiento(),
+                persona.obtenerAnioNacimiento());
         
+                          
         
         
         
