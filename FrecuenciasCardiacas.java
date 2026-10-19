@@ -70,9 +70,16 @@ public class FrecuenciasCardiacas {
         return edad;
     }
 
-    public it calcularFrecuenciaMaxima() {
+    public int calcularFrecuenciaMaxima() {
         return 220 - calcularEdad();
     }
     public double calcularFrecuenciaEsperadaMinima() {
+        return calcularFrecuenciaMaxima() * 0.50;
+    }
+
+    public double calcularFrecuenciaEsperadaMaxima() {
+        return calcularFrecuenciaMaxima() * 0.85;
+    }
+}
     
         
