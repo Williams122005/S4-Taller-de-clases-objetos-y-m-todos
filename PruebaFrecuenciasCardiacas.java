@@ -31,6 +31,18 @@ public class PruebaFrecuenciasCardiacas {
                 persona.obtenerDiaNacimiento(),
                 persona.ontenerMesNacimiento(),
                 persona.obtenerAnioNacimiento());
+
+        System.out.printf("Edad: " + persona.calcularEdad() + " años");
+        System.out.printf("Frecuencia cardiaca maxima estimada: "
+                + persona.calcularFrecuenciaMaxima() + " pulsaciones/min");
+
+        System.out.printf("Rango esperado: %.1f - %1f pulsaciones/min%n",
+                persona.calcularFrecuenciasaceEspeadaMinima()(
+                persona.calcularFrecuenciaEsperadaMaxima());
+
+        scanner.close();
+    }
+}
         
                           
         
