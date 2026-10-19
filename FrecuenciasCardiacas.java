@@ -40,5 +40,39 @@ public class FrecuenciasCardiacas {
         return diaNaciemiento;
     }
 
+      public void establecerMesNacimiento(int mesNacimiento) {
+        this.mesNacimiento = mesNacimiento;
+    }
+
+    public int obtenermesNacimiento() {
+        return mesNaciemiento;
+    }
+
+      public void establecerAnioNacimiento(int anioNacimiento) {
+        this.anioNacimiento = anioNacimiento;
+    }
+
+    public int obtenerAnioNacimiento() {
+        return anioNaciemiento;
+    }
+
+    public int calcularEdad() { 
+        LocalDte hoy = LocalDate.now();
+        LocalDate nacimiento = LocalDate.of(
+            anioNacimiento, mesNacimiento, diaNamiento);
+
+    int edad = hoy.get.Year() - naciemiento.getYear();
+
+    if (hoy.isBefore(nacimiento.plusYears(edad))) {
+        edad--;
+    }
+
+        return edad;
+    }
+
+    public it calcularFrecuenciaMaxima() {
+        return 220 - calcularEdad();
+    }
+    public double calcularFrecuenciaEsperadaMinima() {
     
         
