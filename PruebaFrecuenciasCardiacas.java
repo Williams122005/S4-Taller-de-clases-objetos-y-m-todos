@@ -11,7 +11,7 @@ public class PruebaFrecuenciasCardiacas {
         System.out.print("Ingrese su apellido: ");
         String apellido = scanner.nextLine();
 
-        System.out.print("Dia de nacimiento: ");
+        System.out.print("Día de nacimiento: ");
         int dia = scanner.nextInt();
 
         System.out.print("Mes de nacimiento: ");
@@ -23,9 +23,9 @@ public class PruebaFrecuenciasCardiacas {
         FrecuenciasCardiacas persona = new FrecuenciasCardiacas(
             nombre, apellido, dia, mes, anio);
 
-        System.out.prinln("\nINFORMACION PERSONAS");
+        System.out.prinln("\nINFORMACIÓN PERSONAS");
         System.out.println("Nombre: " + persona.obtenerPrimerNombre() 
-                 + " " + perosna.obtenerApellido());
+                 + " " + persona.obtenerApellido());
         System.out.printf("Edad: " + persona.calcularEdad() + "años");
         System.out.printf("Fecha de nacimiento: %02d/%02d/%04d%n",
                 persona.obtenerDiaNacimiento(),
@@ -36,17 +36,10 @@ public class PruebaFrecuenciasCardiacas {
         System.out.printf("Frecuencia cardiaca maxima estimada: "
                 + persona.calcularFrecuenciaMaxima() + " pulsaciones/min");
 
-        System.out.printf("Rango esperado: %.1f - %1f pulsaciones/min%n",
-                persona.calcularFrecuenciasaceEspeadaMinima()(
+        System.out.printf("Rango esperado: %.1f - %.1f pulsaciones/min%n",
+                persona.calcularFrecuenciaEsperadaMinima(),
                 persona.calcularFrecuenciaEsperadaMaxima());
 
         scanner.close();
     }
 }
-        
-                          
-        
-        
-        
-    
-    
