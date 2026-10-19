@@ -9,14 +9,15 @@ public class FrecuenciasCardiacas {
     private int anioNacimiento;
 
     public FrecuenciasCardiacas(String primerNombre, String apellido,
-           int diaNacimiento, int anioNacimiento) {
+            int diaNacimiento, int mesNacimiento, int anioNacimiento) {
         this.primerNombre = primerNombre;
         this.apellido = apellido; 
         this.diaNacimiento = diaNacimiento;
         this.mesNacimiento = mesNacimiento; 
         this.anioNacimiento = aniNacimiento;
     }
-    public void establecerPrimerNombre(String primerNombre){
+    
+    public void establecerPrimerNombre(String primerNombre) {
         this.primerNombre = primerNombre;
     }
 
@@ -57,11 +58,11 @@ public class FrecuenciasCardiacas {
     }
 
     public int calcularEdad() { 
-        LocalDte hoy = LocalDate.now();
+        LocalDate hoy = LocalDate.now();
         LocalDate nacimiento = LocalDate.of(
-            anioNacimiento, mesNacimiento, diaNamiento);
+            anioNacimiento, mesNacimiento, diaNacimiento);
 
-    int edad = hoy.get.Year() - naciemiento.getYear();
+    int edad = hoy.getYear() - nacimiento.getYear();
 
     if (hoy.isBefore(nacimiento.plusYears(edad))) {
         edad--;
@@ -81,5 +82,3 @@ public class FrecuenciasCardiacas {
         return calcularFrecuenciaMaxima() * 0.85;
     }
 }
-    
-        
