@@ -23,18 +23,17 @@ public class PruebaFrecuenciasCardiacas {
         FrecuenciasCardiacas persona = new FrecuenciasCardiacas(
             nombre, apellido, dia, mes, anio);
 
-        System.out.prinln("\nINFORMACIÓN PERSONAS");
+        System.out.println("\nINFORMACIÓN PERSONAS");
         System.out.println("Nombre: " + persona.obtenerPrimerNombre() 
                  + " " + persona.obtenerApellido());
-        System.out.printf("Edad: " + persona.calcularEdad() + "años");
         System.out.printf("Fecha de nacimiento: %02d/%02d/%04d%n",
                 persona.obtenerDiaNacimiento(),
-                persona.ontenerMesNacimiento(),
+                persona.obtenerMesNacimiento(),
                 persona.obtenerAnioNacimiento());
 
-        System.out.printf("Edad: " + persona.calcularEdad() + " años");
-        System.out.printf("Frecuencia cardiaca maxima estimada: "
-                + persona.calcularFrecuenciaMaxima() + " pulsaciones/min");
+        System.out.println("Edad: " + persona.calcularEdad() + " años");
+        System.out.println("Frecuencia cardiaca maxima estimada: "
+                + persona.calcularFrecuenciaMaxima() + " pulsaciones/min")
 
         System.out.printf("Rango esperado: %.1f - %.1f pulsaciones/min%n",
                 persona.calcularFrecuenciaEsperadaMinima(),
