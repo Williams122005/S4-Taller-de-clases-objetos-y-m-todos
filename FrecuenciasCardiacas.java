@@ -14,7 +14,7 @@ public class FrecuenciasCardiacas {
         this.apellido = apellido; 
         this.diaNacimiento = diaNacimiento;
         this.mesNacimiento = mesNacimiento; 
-        this.anioNacimiento = aniNacimiento;
+        this.anioNacimiento = anioNacimiento;
     }
     
     public void establecerPrimerNombre(String primerNombre) {
@@ -45,7 +45,7 @@ public class FrecuenciasCardiacas {
         this.mesNacimiento = mesNacimiento;
     }
 
-    public int obtenermesNacimiento() {
+    public int obtenerMesNacimiento() {
         return mesNaciemiento;
     }
 
